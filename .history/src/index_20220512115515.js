@@ -4,7 +4,7 @@ const number = document.querySelector("span");
 
 let count = 0;
 
-number.innerText = count;
+// number.innerText = count;
 
 const updateText = () => {
   number.innerText = count;
@@ -20,5 +20,5 @@ const handleMinus = () => {
   updateText();
 };
 
-add.addEventListener("click", handleAdd);
-minus.addEventListener("click", handleMinus);
+add.addEventListener("click",handleAdd);
+minus.addEventListener("click",handleMinus);

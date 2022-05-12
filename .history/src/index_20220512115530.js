@@ -20,5 +20,5 @@ const handleMinus = () => {
   updateText();
 };
 
-add.addEventListener("click", handleAdd);
-minus.addEventListener("click", handleMinus);
+add.addEventListener("click",handleAdd);
+minus.addEventListener("click",handleMinus);
