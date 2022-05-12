@@ -11,9 +11,9 @@ const MINUS = "MINUS"
 const countModifier = (count = 0, action) => {
   // console.log(count, action);
   switch (action.type) {
-    case ADD:
+    case "ADD":
       return count + 1;
-    case MINUS:
+    case "MINUS":
       return count - 1;
     default:
       return count;
@@ -36,5 +36,5 @@ const onChange = () => {
 
 countStore.subscribe(onChange);
 
-add.addEventListener("click", () => countStore.dispatch({ type: ADD }));
-minus.addEventListener("click", () => countStore.dispatch({ type: MINUS }));
+add.addEventListener("click", () => countStore.dispatch({ type: "ADD" }));
+minus.addEventListener("click", () => countStore.dispatch({ type: "MINUS" }));
